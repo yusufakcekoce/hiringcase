@@ -1,0 +1,58 @@
+.listHeader {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3%;
+}
+
+input.listSearch {
+  width: 509px;
+  height: 46px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  outline: none;
+  padding: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #484848;
+}
+
+.searchBtn {
+  width: 138px;
+  height: 46px;
+  background: #204080;
+  border-radius: 12px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+
+  &:hover {
+    background: #4f75c2;
+  }
+}
+
+button.newRecord {
+  background: #204080;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  border: none;
+  outline: none;
+  width: 197.16px;
+  height: 46px;
+  border-radius: 12px;
+  cursor: pointer;
+
+  &:hover {
+    background: #4f75c2;
+  }
+}

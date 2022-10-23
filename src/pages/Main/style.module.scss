@@ -17,6 +17,10 @@ button.newRecord {
   height: 46px;
   border-radius: 12px;
   cursor: pointer;
+
+  &:hover {
+    background: #4f75c2;
+  }
 }
 
 .logo img {
@@ -47,14 +51,14 @@ button.newRecord {
   width: 646px;
   height: 48px;
   outline: none;
-  padding: 10px;
+  padding: 20px;
 }
 
 p.textAuto {
   margin-bottom: 1%;
   display: flex;
   align-items: flex-start;
-  width: 800px;
+  width: 765px;
 }
 
 button.searchBtn {
@@ -72,6 +76,10 @@ button.searchBtn {
   color: #ffffff;
   cursor: pointer;
   margin-left: 1%;
+
+  &:hover {
+    background: #4f75c2;
+  }
 }
 
 .input {
@@ -79,4 +87,30 @@ button.searchBtn {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.footer {
+  margin-top: 10%;
+}
+
+button.newRecord {
+  margin-top: 3%;
+  margin-left: 50%;
+  background: #204080;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  border: none;
+  outline: none;
+  width: 197.16px;
+  height: 46px;
+  border-radius: 12px;
+  cursor: pointer;
+
+  &:hover {
+    background: #4f75c2;
+  }
 }
