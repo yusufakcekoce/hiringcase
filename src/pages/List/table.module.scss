@@ -1,0 +1,65 @@
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.liList {
+  display: flex;
+  width: 727px;
+  height: 79px;
+  border-radius: 8px;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
+
+.paginationBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+li {
+  list-style: none;
+}
+
+li.name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #090a0a;
+}
+
+li.address {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #72777a;
+}
+
+li.company {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #484848;
+}
+
+li.date {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #484848;
+}

@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import styles from "./App.module.scss";
-import Add from "./pages/Add";
-import List from "./pages/List";
 
 // Components
 import Main from "./pages/Main";
+import Add from "./pages/Add";
+import List from "./pages/List";
 
 function App() {
   return (

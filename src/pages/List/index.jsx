@@ -2,12 +2,9 @@ import React from "react";
 import Logo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import styles from "./style.module.scss";
-import { mapper } from "../../service/mapper";
+import Table from "./Table";
 
 function List() {
-  const data = mapper().then((data) => {
-     console.log(data);
-    });
   return (
     <div>
       <div className={styles.listHeader}>
@@ -27,11 +24,7 @@ function List() {
         </Link>
       </div>
 
-      <div className={styles.list}>
-        <ul>
-
-        </ul>
-      </div>
+      <Table />
     </div>
   );
 }
