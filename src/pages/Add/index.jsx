@@ -59,6 +59,9 @@ function Add() {
                   type="text"
                   id="NameSurname"
                   placeholder="Enter name and surname"
+                  minLength={4}
+                  maxLength={60}
+                  pattern="[A-Z a-z]*"
                 />
 
                 <label className={styles.formP} htmlFor="company">
@@ -90,6 +93,9 @@ function Add() {
                   type="text"
                   id="Country"
                   placeholder="Enter a country"
+                  minLength={2}
+                  maxLength={40}
+                  pattern="[A-Z a-z]*"
                 />
 
                 <label className={styles.formP} htmlFor="city">
@@ -101,6 +107,9 @@ function Add() {
                   type="text"
                   id="City"
                   placeholder="Enter a city"
+                  minLength={2}
+                  maxLength={40}
+                  pattern="[A-Z a-z]*"
                 />
 
                 <label className={styles.formP} htmlFor="email">
@@ -109,7 +118,7 @@ function Add() {
                 <input
                   required
                   className={styles.formInput}
-                  type="text"
+                  type="email"
                   id="Email"
                   placeholder="Enter a e-mail (abc@xyz.com)"
                 />
