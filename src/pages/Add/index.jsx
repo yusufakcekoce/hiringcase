@@ -3,10 +3,36 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import { ImArrowLeft2 } from "react-icons/im";
 import styles from "./style.module.scss";
-import axios from "axios";
 
 function Add() {
-  
+  const addRecord = (e) => {
+    e.preventDefault();
+    const NameSurname = document.getElementById("NameSurname").value;
+    const Company = document.getElementById("Company").value;
+    const Country = document.getElementById("Country").value;
+    const City = document.getElementById("City").value;
+    const Date = document.getElementById("Date").value;
+    const Email = document.getElementById("Email").value;
+
+    const data = {
+      NameSurname,
+      Company,
+      Country,
+      City,
+      Date,
+      Email,
+    };
+    console.log(data);
+    fetch("http://localhost:3000/data", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  };
   return (
     <div>
       <div className={styles.headerLogo}>
@@ -23,7 +49,7 @@ function Add() {
         <div className={styles.addForm}>
           <div className={styles.addFormLeft}>
             <div className={styles.addFormLeftItem}>
-              <form className={styles.addFormLabels}>
+              <form onSubmit={addRecord} className={styles.addFormLabels} >
                 <label className={styles.formP} htmlFor="name">
                   Name Surname
                 </label>

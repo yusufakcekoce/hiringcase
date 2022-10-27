@@ -22,15 +22,46 @@ export default function Table({ data }) {
 
   const sortData = useCallback((data) => {
     if (selected === "A-Z") {
-      return data.sort((a, b) => a.NameSurname.localeCompare(b.NameSurname));
+      return [].slice.call(data).sort((a, b) => {
+        if (a.NameSurname < b.NameSurname) {
+          return -1;
+        }
+        if (a.NameSurname > b.NameSurname) {
+          return 1;
+        }
+        return 0;
+      });
     } else if (selected === "Z-A") {
-      return data.sort((a, b) => b.NameSurname.localeCompare(a.NameSurname));
+      return [].slice.call(data).sort((a, b) => {
+        if (a.NameSurname > b.NameSurname) {
+          return -1;
+        }
+        if (a.NameSurname < b.NameSurname) {
+          return 1;
+        }
+        return 0;
+      });
+      
     } else if (selected === "Year ascending") {
-      console.log("hello");
-      return data;
+      return [].slice.call(data).sort((a, b) => {
+        if (a.Date < b.Date) {
+          return -1;
+        }
+        if (a.Date > b.Date) {
+          return 1;
+        }
+        return 0;
+      });
     } else if (selected === "Year descending") {
-      console.log("hello2");
-      return data;
+      return [].slice.call(data).sort((a, b) => {
+        if (a.Date > b.Date) {
+          return -1;
+        }
+        if (a.Date < b.Date) {
+          return 1;
+        }
+        return 0;
+      });
     } else {
       return data;
     }
@@ -70,7 +101,7 @@ export default function Table({ data }) {
       <div className={styles.listContainer}>
         {currentTableData.map((item) => {
           return (
-            <>
+            <div key={item.NameSurname}>
               <ul className={styles.listContext}>
                 {/* <i className={styles.arrow}>
                   <GrLocation />
@@ -87,7 +118,7 @@ export default function Table({ data }) {
                 </li>
               </ul>
               <li className={styles.underline}></li>
-            </>
+            </div>
           );
         })}
       </div>
