@@ -8,6 +8,7 @@ function Carousel() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   return (
     <div className={styles.carouselContainer}>
+      <h1 className={styles.sliderHead}>Top news</h1>
       <ReactSimplyCarousel
         activeSlideIndex={activeSlideIndex}
         onRequestChange={setActiveSlideIndex}
@@ -27,7 +28,7 @@ function Carousel() {
             textAlign: "center",
             width: 70,
           },
-          children: <span>{`>`}</span>,
+          children: <span className={styles.span}>{`>`}</span>,
         }}
         backwardBtnProps={{
           style: {
@@ -43,7 +44,7 @@ function Carousel() {
             textAlign: "center",
             width: 70,
           },
-          children: <span>{`<`}</span>,
+          children: <span className={styles.span}>{`<`}</span>,
         }}
         responsiveProps={[
           {
@@ -55,36 +56,36 @@ function Carousel() {
         speed={400}
         easing="linear"
       >
-        <div>
-          <img src={Slider} alt="" width="327px" height="195px" />
+        <div className={styles.imgContainer}>
+          <img className={styles.sliderImg} src={Slider} alt="" width="327px" height="195px" />
           <p className={styles.firstP}>
             A Plan to Rebuild the Bus Terminal Everyone Loves to Hate
           </p>
           <p className={styles.secondP}>1h ago · by Troy Corlson</p>
         </div>
-        <div>
-          <img src={Slider} alt="" width="327px" height="195px" />
+        <div className={styles.imgContainer}>
+          <img className={styles.sliderImg} src={Slider} alt="" width="327px" height="195px" />
           <p className={styles.firstP}>
             A Plan to Rebuild the Bus Terminal Everyone Loves to Hate
           </p>
           <p className={styles.secondP}>1h ago · by Troy Corlson</p>
         </div>
-        <div>
-          <img src={Slider} alt="" width="327px" height="195px" />
+        <div className={styles.imgContainer}>
+          <img className={styles.sliderImg} src={Slider} alt="" width="327px" height="195px" />
           <p className={styles.firstP}>
             A Plan to Rebuild the Bus Terminal Everyone Loves to Hate
           </p>
           <p className={styles.secondP}>1h ago · by Troy Corlson</p>
         </div>
-        <div>
-          <img src={Slider} alt="" width="327px" height="195px" />
+        <div className={styles.imgContainer}>
+          <img className={styles.sliderImg} src={Slider} alt="" width="327px" height="195px" />
           <p className={styles.firstP}>
             A Plan to Rebuild the Bus Terminal Everyone Loves to Hate
           </p>
           <p className={styles.secondP}>1h ago · by Troy Corlson</p>
         </div>
-        <div>
-          <img src={Slider} alt="" width="327px" height="195px" />
+        <div className={styles.imgContainer}>
+          <img className={styles.sliderImg} src={Slider} alt="" width="327px" height="195px" />
           <p className={styles.firstP}>
             A Plan to Rebuild the Bus Terminal Everyone Loves to Hate
           </p>

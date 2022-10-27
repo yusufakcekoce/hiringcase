@@ -3,17 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
-}
-
-.liList {
-  display: flex;
-  width: 727px;
-  height: 79px;
-  border-radius: 8px;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 2%;
+  margin-top: 1%;
 }
 
 .paginationBar {
@@ -22,44 +12,140 @@
   justify-content: center;
   align-items: center;
   margin-top: 3%;
+  margin-bottom: 2%;
 }
 
 li {
   list-style: none;
 }
 
-li.name {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #090a0a;
+.listContext {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 726.14px;
+  height: 90px;
+  background: #ffffff;
+  border-radius: 8px;
+  margin-top: 2%;
+  padding: 0 20px;
+
+  &:hover {
+    background: rgba(79, 117, 194, 0.21);
+    border-radius: 8px;
+  }
+
+  .leftLi {
+    text-align: left;
+  }
+
+  .rightLi {
+    text-align: right;
+  }
+  p.nameP {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #090a0a;
+  }
+
+  p.countryP {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #72777a;
+  }
+
+  p.companyP {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #484848;
+  }
+
+  p.dateP {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #484848;
+  }
 }
 
-li.address {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #72777a;
+i.arrow {
+  font-size: 30px;
 }
 
-li.company {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #484848;
+li.underline {
+  width: 726.14px;
+  margin-top: 1%;
+  border: 1px solid #7e7e7e;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+
+  &:last-child {
+    border: none;
+  }
 }
 
-li.date {
-  font-family: "Inter";
+.dropdown {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown .dropdownBtn {
+  padding: 20px 15px;
+  background: #f3f2f2;
+  border: 1px solid #414141;
+  border-radius: 8px;
+  width: 126.28px;
+  height: 29.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 21px;
   color: #484848;
+}
+
+.dropdown .dropdownContent {
+  width: 155.78px;
+  height: 146px;
+  background: #ffffff;
+  border: 1px solid #8f8f8f;
+  box-shadow: 4px 6px 12px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-top: 1%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.dropdown .dropdownContent .dropdownItem {
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dropdown .dropdownContent .dropdownItem:hover {
+  background: #b3b3b3;
+  border-radius: 8px;
+  color: #ffffff;
 }

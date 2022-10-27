@@ -38,7 +38,7 @@ const Pagination = (props) => {
       className={classnames("pagination-container", { [className]: className })}
     >
       <li
-        className={classnames("pagination-item rotate", {
+        className={classnames("rotate", {
           disabled: currentPage === 1,
         })}
         onClick={onPrevious}
@@ -63,7 +63,7 @@ const Pagination = (props) => {
       })}
 
       <li
-        className={classnames("pagination-item rotate", {
+        className={classnames("rotate", {
           disabled: currentPage === lastPage,
         })}
         onClick={onNext}

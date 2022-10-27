@@ -3,7 +3,6 @@ import styles from "./style.module.scss";
 import Logo from "../../assets/images/logo.png";
 import Footer from "../../components/footer";
 
-import { FiSearch } from "react-icons/fi";
 import Carousel from "../../components/carousel";
 import { Link } from "react-router-dom";
 function Main() {
@@ -17,13 +16,15 @@ function Main() {
       </div>
       <div className={styles.searchClass}>
         <p className={styles.textAuto}>Find in records</p>
-        <div className={styles.input}>
-          <i>
-            <FiSearch />
-          </i>
-          <input type="text" placeholder="Search" />
-          <button className={styles.searchBtn}>Search</button>
-        </div>
+
+        <div className={styles.searchContext}>
+        <form className={styles.nosubmit}>
+          <input className={styles.nosubmit} type="search" placeholder="Search..." />
+        </form>
+          <button className={styles.searchBtn}>
+            Search
+          </button>
+          </div>
       </div>
 
       <div>

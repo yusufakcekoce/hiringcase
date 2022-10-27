@@ -6,6 +6,11 @@
   margin-top: 5%;
 }
 
+.addFormLabels {
+  display: flex;
+  flex-direction: column;
+}
+
 .headerLogo {
   margin-top: 3%;
   margin-right: 50%;
@@ -37,6 +42,7 @@ label.formP {
   line-height: 21px;
   color: #686868;
   margin-bottom: 1%;
+  display: flex;
 }
 
 input.formInput {
@@ -47,7 +53,7 @@ input.formInput {
   border-radius: 12px;
   outline: none;
   padding: 20px;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -63,6 +69,21 @@ input.formInput {
 
 button.buttonAdd {
   margin-top: 1%;
+  width: 138px;
+  height: 46px;
+  background: #204080;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    background: #4f75c2;
+  }
+}
+
+input.inputBtn {
   width: 138px;
   height: 46px;
   background: #204080;

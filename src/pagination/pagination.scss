@@ -22,12 +22,6 @@
     line-height: 16px;
     color: #484848;
 
-    .rotate {
-      background: #ffffff;
-      border: 1px solid #484848;
-      border-radius: 4px;
-    }
-
     &.dots:hover {
       background-color: transparent;
       cursor: default;
@@ -52,5 +46,27 @@
         cursor: default;
       }
     }
+  }
+}
+
+.rotate {
+  width: 85.71px;
+  height: 25px;
+  background: #ffffff;
+  border: 1px solid #484848;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #484848;
+
+  &.disabled {
+    pointer-events: none;
+    color: #6e6e6e;
   }
 }
